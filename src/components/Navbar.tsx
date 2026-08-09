@@ -31,7 +31,7 @@ export default function Navbar() {
         <a href="#inicio" className="flex items-center gap-2 shrink-0">
           <Image
             src="/brand/logo.webp"
-            alt="MiEL energy"
+            alt="MIEL energy"
             width={140}
             height={134}
             priority

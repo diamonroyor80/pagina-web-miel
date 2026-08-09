@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { Zap, Sun, Battery } from "lucide-react";
-import RhombusField from "./RhombusField";
+import HexField from "./HexField";
+import { HexBadge, HexPortrait } from "./Hex";
 
 const traits = [
   {
@@ -27,10 +28,11 @@ export default function MielinaGuide() {
   return (
     <section id="mielina" className="relative overflow-hidden bg-navy-900 py-24 sm:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(53,127,152,0.35),_transparent_60%)]" />
-      <RhombusField
+      <HexField
         items={[
           { top: "12%", left: "8%", size: 70, color: "var(--color-gold-400)", opacity: 0.18, delay: "0.3s", rotate: 14 },
           { top: "75%", left: "88%", size: 110, color: "var(--color-sky-300)", opacity: 0.12, delay: "1.1s", rotate: -10 },
+          { top: "40%", left: "50%", size: 260, color: "var(--color-gold-500)", opacity: 0.15, delay: "0.5s", rotate: 0, blur: true, gold: true },
         ]}
       />
 
@@ -42,14 +44,15 @@ export default function MielinaGuide() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative mx-auto"
         >
-          <div className="absolute inset-0 rounded-full bg-gold-500/25 blur-[100px]" />
-          <Image
-            src="/brand/mielina.webp"
-            alt="Mielina, la mascota de MiEL energy"
-            width={866}
-            height={807}
-            className="relative w-[260px] sm:w-[340px] h-auto animate-float-slow drop-shadow-[0_25px_45px_rgba(0,0,0,0.45)]"
-          />
+          <HexPortrait className="w-[260px] h-[330px] sm:w-[340px] sm:h-[430px]">
+            <Image
+              src="/brand/mielina.webp"
+              alt="Mielina, la mascota de MIEL energy"
+              width={866}
+              height={807}
+              className="w-[85%] h-auto object-contain animate-float-slow drop-shadow-[0_25px_45px_rgba(0,0,0,0.45)]"
+            />
+          </HexPortrait>
         </motion.div>
 
         <div>
@@ -66,7 +69,7 @@ export default function MielinaGuide() {
               Mielina, tu guía energética
             </h2>
             <p className="mt-5 max-w-xl text-lg text-sky-100/75 leading-relaxed">
-              Mielina es la abeja que le da cara a MiEL energy: mitad panel
+              Mielina es la abeja que le da cara a MIEL energy: mitad panel
               solar, mitad colmena, siempre en movimiento. Nos acompaña en
               cada visita, cada diseño y cada instalación, recordándonos que
               la energía también puede transmitir calidez.
@@ -83,7 +86,9 @@ export default function MielinaGuide() {
                 transition={{ duration: 0.5, delay: i * 0.12 }}
                 className="rounded-2xl border border-cream-50/10 bg-cream-50/[0.03] p-6"
               >
-                <t.icon className="h-5 w-5 text-gold-400" strokeWidth={1.75} />
+                <HexBadge size={48} strokeWidth={3} gap={9}>
+                  <t.icon className="h-4.5 w-4.5 text-gold-400" strokeWidth={1.75} />
+                </HexBadge>
                 <h3 className="mt-4 font-display text-base font-bold text-cream-50">
                   {t.title}
                 </h3>

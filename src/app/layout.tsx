@@ -19,26 +19,26 @@ const siteUrl = "https://www.mielenergy.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "MiEL energy — Energía solar y respaldo con baterías en Colombia",
-    template: "%s | MiEL energy",
+    default: "MIEL energy — Energía solar y respaldo con baterías en Colombia",
+    template: "%s | MIEL energy",
   },
   description:
-    "MiEL energy diseña e instala sistemas de energía solar y baterías de respaldo en Colombia. Reduce tu factura, gana independencia energética y vive la energía más dulce con Mielina, tu guía energética.",
+    "MIEL energy diseña e instala sistemas de energía solar y baterías de respaldo en Colombia. Reduce tu factura, gana independencia energética y vive la energía más dulce con Mielina, tu guía energética.",
   keywords: [
     "energía solar Colombia",
     "paneles solares",
     "baterías de respaldo",
     "energía solar residencial",
     "energía solar comercial",
-    "MiEL energy",
+    "MIEL energy",
     "independencia energética",
   ],
   openGraph: {
-    title: "MiEL energy — Energía solar y respaldo con baterías",
+    title: "MIEL energy — Energía solar y respaldo con baterías",
     description:
       "Diseñamos, instalamos y monitoreamos sistemas solares y de baterías en Colombia. Energía limpia, dulce e inteligente.",
     url: siteUrl,
-    siteName: "MiEL energy",
+    siteName: "MIEL energy",
     locale: "es_CO",
     type: "website",
   },

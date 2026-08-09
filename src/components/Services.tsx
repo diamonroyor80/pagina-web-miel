@@ -3,13 +3,15 @@
 import { motion } from "motion/react";
 import { Sun, BatteryCharging, Check } from "lucide-react";
 import { services } from "@/lib/content";
+import { HexBadge } from "./Hex";
 
 const icons = { solar: Sun, baterias: BatteryCharging };
 
 export default function Services() {
   return (
-    <section id="soluciones" className="relative bg-cream-50 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+    <section id="soluciones" className="relative overflow-hidden bg-cream-50 py-24 sm:py-32">
+      <div className="glow-gold absolute top-0 right-0 h-96 w-96 opacity-40" aria-hidden />
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,11 +43,19 @@ export default function Services() {
                 transition={{ duration: 0.6, delay: idx * 0.15 }}
                 className="group relative rounded-3xl border border-navy-900/10 bg-white p-8 sm:p-10 shadow-[0_10px_40px_-15px_rgba(6,57,74,0.15)] transition-transform hover:-translate-y-1.5"
               >
-                <span className="rhombus absolute -top-5 -right-5 h-16 w-16 bg-gold-500/90 transition-transform duration-500 group-hover:rotate-90" />
+                <HexBadge
+                  size={64}
+                  fill="var(--color-gold-500)"
+                  outerStroke="var(--color-navy-950)"
+                  innerStroke="var(--color-navy-950)"
+                  strokeWidth={3}
+                  gap={12}
+                  className="absolute -top-5 -right-5 transition-transform duration-500 group-hover:rotate-90"
+                />
 
-                <div className="rhombus flex h-16 w-16 items-center justify-center bg-navy-950">
+                <HexBadge size={68} strokeWidth={3.5} gap={12}>
                   <Icon className="h-7 w-7 text-gold-400" strokeWidth={1.75} />
-                </div>
+                </HexBadge>
 
                 <h3 className="mt-7 font-display text-2xl font-bold text-navy-950">
                   {service.title}

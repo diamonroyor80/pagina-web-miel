@@ -1,11 +1,22 @@
 export const nav = [
   { label: "Inicio", href: "#inicio" },
   { label: "Soluciones", href: "#soluciones" },
-  { label: "Por qué MiEL", href: "#por-que-miel" },
+  { label: "Por qué MIEL", href: "#por-que-miel" },
   { label: "Proceso", href: "#proceso" },
   { label: "Mielina", href: "#mielina" },
   { label: "Contacto", href: "#contacto" },
 ];
+
+export const contact = {
+  whatsappNumber: "573105772919",
+  whatsappDisplay: "+57 310 577 2919",
+  email: "dmonroy@mielenergy.com",
+  address: "Cra 33 #49 - 32, Caudal, Villavicencio, Meta",
+  addressShort: "Villavicencio, Meta",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent("Cra 33 #49 - 32, Caudal, Villavicencio, Meta, Colombia"),
+};
 
 export const services = [
   {
@@ -45,7 +56,7 @@ export const benefits = [
   {
     title: "Respaldo cuando lo necesitas",
     description:
-      "Con baterías MiEL, tu casa o negocio sigue funcionando aunque la red falle.",
+      "Con baterías MIEL, tu casa o negocio sigue funcionando aunque la red falle.",
   },
   {
     title: "Instalación certificada",
@@ -60,7 +71,7 @@ export const benefits = [
   {
     title: "Acompañamiento humano",
     description:
-      "Mielina y todo el equipo MiEL te guían desde la primera visita hasta años después de la instalación.",
+      "Mielina y todo el equipo MIEL te guían desde la primera visita hasta años después de la instalación.",
   },
   {
     title: "Energía que se siente distinta",
@@ -110,6 +121,6 @@ export const mielinaMessages: { section: string; message: string }[] = [
   { section: "soluciones", message: "Solar, baterías o los dos: aquí armamos la combinación perfecta para ti." },
   { section: "por-que-miel", message: "No prometemos magia, prometemos energía bien dimensionada y honesta." },
   { section: "proceso", message: "Diagnóstico, diseño, instalación y monitoreo: yo te guío en cada paso." },
-  { section: "mielina", message: "Mis alas de panel solar cargan mis antenas de batería. ¡Energía 100% MiEL!" },
+  { section: "mielina", message: "Mis alas de panel solar cargan mis antenas de batería. ¡Energía 100% MIEL!" },
   { section: "contacto", message: "¿Listo para tu proyecto? Cuéntame de tu consumo y te escribimos pronto." },
 ];

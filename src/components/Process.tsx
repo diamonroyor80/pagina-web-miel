@@ -3,11 +3,13 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { process } from "@/lib/content";
+import { HexBadge } from "./Hex";
 
 export default function Process() {
   return (
     <section id="proceso" className="relative bg-cream-100 py-24 sm:py-32 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <div className="glow-gold absolute -bottom-20 left-1/4 h-96 w-96 opacity-40" aria-hidden />
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,9 +47,11 @@ export default function Process() {
                 className="relative flex flex-col items-start"
               >
                 <div className="relative">
-                  <span className="rhombus flex h-16 w-16 items-center justify-center bg-navy-950 font-display text-lg font-bold text-gold-400">
-                    {p.step}
-                  </span>
+                  <HexBadge size={68} strokeWidth={3.5} gap={12}>
+                    <span className="font-display text-lg font-bold text-gold-400">
+                      {p.step}
+                    </span>
+                  </HexBadge>
                   {i === 1 && (
                     <Image
                       src="/brand/mielina.webp"

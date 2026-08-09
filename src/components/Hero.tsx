@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import RhombusField from "./RhombusField";
+import HexField from "./HexField";
+import { HexPortrait } from "./Hex";
 
 export default function Hero() {
   return (
@@ -12,7 +13,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-[linear-gradient(180deg,_#041e27_0%,_#06394a_55%,_#0a4457_100%)]" />
       <div className="absolute inset-0 bg-grain opacity-40" />
-      <RhombusField />
+      <HexField />
       <div className="absolute -top-32 right-[-10%] h-[520px] w-[520px] rounded-full bg-gold-500/20 blur-[120px]" />
       <div className="absolute bottom-0 left-[-10%] h-[420px] w-[420px] rounded-full bg-teal-500/25 blur-[110px]" />
 
@@ -34,7 +35,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-sky-100/80 leading-relaxed">
-            En MiEL energy diseñamos, instalamos y monitoreamos sistemas
+            En MIEL energy diseñamos, instalamos y monitoreamos sistemas
             solares y de baterías que reducen tu factura y te dan
             independencia energética, con la dulzura de un equipo que sí te
             acompaña.
@@ -77,19 +78,16 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
           className="relative mx-auto"
         >
-          <div className="absolute inset-0 rounded-full bg-gold-500/25 blur-[90px] animate-pulse-glow" />
-          <div className="relative rhombus-tall bg-gradient-to-br from-teal-500/30 via-gold-500/20 to-sky-300/20 p-1 w-[280px] h-[360px] sm:w-[340px] sm:h-[440px] mx-auto">
-            <div className="rhombus-tall h-full w-full bg-navy-900/40 backdrop-blur-sm flex items-center justify-center">
-              <Image
-                src="/brand/mielina.webp"
-                alt="Mielina, la abeja guía energética de MiEL energy"
-                width={866}
-                height={807}
-                priority
-                className="w-[85%] h-auto object-contain animate-float-slow drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
-              />
-            </div>
-          </div>
+          <HexPortrait className="w-[280px] h-[360px] sm:w-[340px] sm:h-[440px] mx-auto">
+            <Image
+              src="/brand/mielina.webp"
+              alt="Mielina, la abeja guía energética de MIEL energy"
+              width={866}
+              height={807}
+              priority
+              className="w-[85%] h-auto object-contain animate-float-slow drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
+            />
+          </HexPortrait>
         </motion.div>
       </div>
 

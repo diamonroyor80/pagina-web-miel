@@ -8,6 +8,7 @@ import MielinaGuide from "@/components/MielinaGuide";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import MielinaFloatingGuide from "@/components/MielinaFloatingGuide";
+import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </main>
       <Footer />
       <MielinaFloatingGuide />
+      <WhatsAppFloatingButton />
     </div>
   );
 }

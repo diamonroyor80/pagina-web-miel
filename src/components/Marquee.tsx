@@ -14,7 +14,7 @@ export default function Marquee() {
                 className="flex items-center gap-6 px-6 font-display text-sm sm:text-base font-bold uppercase tracking-wide text-navy-950"
               >
                 {item}
-                <span className="rhombus h-2.5 w-2.5 bg-navy-950/70" />
+                <span className="hex h-2.5 w-2.5 bg-navy-950/70" />
               </span>
             ))}
           </div>

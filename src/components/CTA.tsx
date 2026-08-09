@@ -2,13 +2,11 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Mail, MapPin, MessageCircle } from "lucide-react";
-import RhombusField from "./RhombusField";
-
-// TODO: reemplaza estos datos por los reales de MiEL energy antes de publicar.
-const WHATSAPP_NUMBER = "573000000000";
-const CONTACT_EMAIL = "contacto@mielenergy.com";
-const CITY = "Colombia";
+import { Mail, MapPin } from "lucide-react";
+import { WhatsappIcon } from "./SocialIcons";
+import { HexBadge } from "./Hex";
+import HexField from "./HexField";
+import { contact } from "@/lib/content";
 
 export default function CTA() {
   const [form, setForm] = useState({
@@ -20,17 +18,18 @@ export default function CTA() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hola MiEL energy, soy ${form.nombre || "—"}.%0AInterés: ${form.interes}%0ATeléfono: ${form.telefono || "—"}%0AMensaje: ${form.mensaje || "—"}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
+    const text = `Hola MIEL energy, soy ${form.nombre || "—"}.%0AInterés: ${form.interes}%0ATeléfono: ${form.telefono || "—"}%0AMensaje: ${form.mensaje || "—"}`;
+    window.open(`https://wa.me/${contact.whatsappNumber}?text=${text}`, "_blank");
   };
 
   return (
     <section id="contacto" className="relative overflow-hidden bg-navy-950 py-24 sm:py-32">
       <div className="absolute inset-0 bg-[linear-gradient(160deg,_#041e27_0%,_#06394a_60%,_#0f5568_100%)]" />
-      <RhombusField
+      <HexField
         items={[
           { top: "8%", left: "85%", size: 90, color: "var(--color-gold-500)", opacity: 0.16, delay: "0.4s", rotate: 8 },
           { top: "80%", left: "6%", size: 130, color: "var(--color-sky-300)", opacity: 0.1, delay: "1.3s", rotate: -12 },
+          { top: "45%", left: "50%", size: 300, color: "var(--color-gold-500)", opacity: 0.14, delay: "0.2s", rotate: 0, blur: true, gold: true },
         ]}
       />
 
@@ -48,38 +47,45 @@ export default function CTA() {
             Cotiza tu energía solar o de respaldo
           </h2>
           <p className="mt-5 max-w-md text-lg text-sky-100/75 leading-relaxed">
-            Cuéntanos sobre tu consumo y tu ubicación. Un asesor de MiEL
+            Cuéntanos sobre tu consumo y tu ubicación. Un asesor de MIEL
             energy te contacta con una propuesta a la medida.
           </p>
 
           <div className="mt-10 space-y-5">
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              href={`https://wa.me/${contact.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 group"
             >
-              <span className="rhombus flex h-12 w-12 items-center justify-center bg-gold-500/15 shrink-0">
-                <MessageCircle className="h-5 w-5 text-gold-400" strokeWidth={1.75} />
-              </span>
+              <HexBadge size={52} strokeWidth={3} gap={9}>
+                <WhatsappIcon className="h-5 w-5 text-gold-400" />
+              </HexBadge>
               <span className="text-cream-50/90 group-hover:text-gold-400 transition-colors">
-                WhatsApp directo con un asesor
+                WhatsApp directo: {contact.whatsappDisplay}
               </span>
             </a>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-4 group">
-              <span className="rhombus flex h-12 w-12 items-center justify-center bg-gold-500/15 shrink-0">
+            <a href={`mailto:${contact.email}`} className="flex items-center gap-4 group">
+              <HexBadge size={52} strokeWidth={3} gap={9}>
                 <Mail className="h-5 w-5 text-gold-400" strokeWidth={1.75} />
-              </span>
+              </HexBadge>
               <span className="text-cream-50/90 group-hover:text-gold-400 transition-colors">
-                {CONTACT_EMAIL}
+                {contact.email}
               </span>
             </a>
-            <div className="flex items-center gap-4">
-              <span className="rhombus flex h-12 w-12 items-center justify-center bg-gold-500/15 shrink-0">
+            <a
+              href={contact.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group"
+            >
+              <HexBadge size={52} strokeWidth={3} gap={9}>
                 <MapPin className="h-5 w-5 text-gold-400" strokeWidth={1.75} />
+              </HexBadge>
+              <span className="text-cream-50/90 group-hover:text-gold-400 transition-colors">
+                {contact.address}
               </span>
-              <span className="text-cream-50/90">{CITY}</span>
-            </div>
+            </a>
           </div>
         </motion.div>
 
