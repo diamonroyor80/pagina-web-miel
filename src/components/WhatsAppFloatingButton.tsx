@@ -32,7 +32,7 @@ export default function WhatsAppFloatingButton() {
       className="fixed bottom-5 left-5 z-40"
     >
       <HexBadge
-        size={58}
+        size={76}
         strokeWidth={3.5}
         gap={10}
         fill="var(--color-gold-500)"
@@ -40,7 +40,7 @@ export default function WhatsAppFloatingButton() {
         innerStroke="var(--color-navy-950)"
         className="shadow-[0_8px_24px_-6px_rgba(6,57,74,0.5)] transition-transform hover:scale-105"
       >
-        <WhatsappIcon className="h-6 w-6 text-navy-950" />
+        <WhatsappIcon className="h-10 w-10 text-navy-950" />
       </HexBadge>
     </motion.a>
   );

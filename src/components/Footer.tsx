@@ -31,8 +31,8 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Escríbenos por WhatsApp"
               >
-                <HexBadge size={44} strokeWidth={2.5} gap={8} fill="var(--color-gold-500)" outerStroke="var(--color-navy-950)" innerStroke="var(--color-navy-950)">
-                  <WhatsappIcon className="h-4.5 w-4.5 text-navy-950" />
+                <HexBadge size={56} strokeWidth={2.75} gap={9} fill="var(--color-gold-500)" outerStroke="var(--color-navy-950)" innerStroke="var(--color-navy-950)">
+                  <WhatsappIcon className="h-7 w-7 text-navy-950" />
                 </HexBadge>
               </a>
               {[

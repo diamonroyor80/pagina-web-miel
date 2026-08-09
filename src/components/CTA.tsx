@@ -58,8 +58,8 @@ export default function CTA() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 group"
             >
-              <HexBadge size={52} strokeWidth={3} gap={9}>
-                <WhatsappIcon className="h-5 w-5 text-gold-400" />
+              <HexBadge size={62} strokeWidth={3.25} gap={10}>
+                <WhatsappIcon className="h-8 w-8 text-gold-400" />
               </HexBadge>
               <span className="text-cream-50/90 group-hover:text-gold-400 transition-colors">
                 WhatsApp directo: {contact.whatsappDisplay}
