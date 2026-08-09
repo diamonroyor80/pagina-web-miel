@@ -27,15 +27,12 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ## Pendiente antes de publicar
 
-En `src/components/CTA.tsx` hay datos de contacto de ejemplo que debes
-reemplazar por los reales:
+Los datos de contacto reales (WhatsApp, correo, dirección) ya están
+cargados en `src/lib/content.ts` (`contact`). Lo único que falta:
 
-- `WHATSAPP_NUMBER` — número de WhatsApp del equipo comercial.
-- `CONTACT_EMAIL` — correo de contacto.
-- `CITY` — ciudad/cobertura a mostrar.
-
-Los enlaces de redes sociales en `src/components/Footer.tsx` también están
-como placeholder (`href="#"`).
+- Los enlaces de redes sociales en `src/components/Footer.tsx` siguen
+  como placeholder (`href="#"`) — reemplázalos por los perfiles reales
+  de Instagram, Facebook y LinkedIn cuando existan.
 
 ## Despliegue en Vercel
 
