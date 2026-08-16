@@ -15,13 +15,11 @@ export const contact = {
   email: "dmonroy@mielenergy.com",
   address: "Cra 33 #49 - 32, Caudal, Villavicencio, Meta",
   addressShort: "Villavicencio, Meta",
-  mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=" +
-    encodeURIComponent("Cra 33 #49 - 32, Caudal, Villavicencio, Meta, Colombia"),
+  mapsUrl: "https://maps.app.goo.gl/53xn3vNLAV8iovrK9",
   mapsEmbedUrl:
     "https://www.google.com/maps?q=" +
-    encodeURIComponent("Cra 33 #49 - 32, Caudal, Villavicencio, Meta, Colombia") +
-    "&output=embed",
+    encodeURIComponent("Miel Energy - Energía Solar") +
+    "&ll=4.1632323,-73.6413363&z=17&output=embed",
   instagramUrl: "https://www.instagram.com/mielenergiasolar/",
 };
 
