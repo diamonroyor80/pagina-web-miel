@@ -1,6 +1,6 @@
 {
-  "name": "MiEL energy",
-  "short_name": "MiEL energy",
+  "name": "Miel energy",
+  "short_name": "Miel energy",
   "description": "Energía solar y baterías de respaldo en Colombia.",
   "start_url": "/",
   "display": "standalone",

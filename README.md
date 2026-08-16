@@ -1,6 +1,6 @@
-# MiEL energy — sitio web
+# Miel energy — sitio web
 
-Sitio de marketing de MiEL energy (energía solar y baterías de respaldo en
+Sitio de marketing de Miel energy (energía solar y baterías de respaldo en
 Colombia), construido con Next.js 16 (App Router) + Tailwind CSS v4 +
 Motion.
 

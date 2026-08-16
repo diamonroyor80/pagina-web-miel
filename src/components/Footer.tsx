@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Image
               src="/brand/logo.webp"
-              alt="MIEL energy"
+              alt="Miel energy"
               width={140}
               height={134}
               className="h-10 w-auto object-contain"
@@ -36,9 +36,9 @@ export default function Footer() {
                 </HexBadge>
               </a>
               {[
-                { Icon: InstagramIcon, label: "Instagram de MIEL energy" },
-                { Icon: FacebookIcon, label: "Facebook de MIEL energy" },
-                { Icon: LinkedinIcon, label: "LinkedIn de MIEL energy" },
+                { Icon: InstagramIcon, label: "Instagram de Miel energy" },
+                { Icon: FacebookIcon, label: "Facebook de Miel energy" },
+                { Icon: LinkedinIcon, label: "LinkedIn de Miel energy" },
               ].map(({ Icon, label }, i) => (
                 <a key={i} href="#" aria-label={label}>
                   <HexBadge size={44} strokeWidth={2.5} gap={8}>
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sky-100/50">
-          <p>© {new Date().getFullYear()} MIEL energy. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Miel energy. Todos los derechos reservados.</p>
           <p>Energía solar · Baterías de respaldo · Hecho en Colombia</p>
         </div>
       </div>

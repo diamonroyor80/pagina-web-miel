@@ -9,7 +9,7 @@ import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 export const metadata: Metadata = {
   title: "Nuestro equipo",
   description:
-    "Conoce al equipo de MIEL energy: ingeniería, operaciones y finanzas trabajando juntos para llevarte energía solar honesta y confiable.",
+    "Conoce al equipo de Miel energy: ingeniería, operaciones y finanzas trabajando juntos para llevarte energía solar honesta y confiable.",
 };
 
 export default function EquipoPage() {

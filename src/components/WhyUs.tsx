@@ -37,7 +37,7 @@ export default function WhyUs() {
           className="max-w-2xl"
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-gold-500/10 border border-gold-400/30 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-400 uppercase">
-            Por qué MIEL
+            Por qué Miel
           </span>
           <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-cream-50 leading-tight">
             Energía honesta, de principio a fin

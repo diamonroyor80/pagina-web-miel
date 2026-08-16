@@ -47,7 +47,7 @@ export default function MielinaGuide() {
           <HexPortrait className="w-[260px] h-[330px] sm:w-[340px] sm:h-[430px]">
             <Image
               src="/brand/mielina.webp"
-              alt="Mielina, la mascota de MIEL energy"
+              alt="Mielina, la mascota de Miel energy"
               width={866}
               height={807}
               className="w-[85%] h-auto object-contain animate-float-slow drop-shadow-[0_25px_45px_rgba(0,0,0,0.45)]"
@@ -69,7 +69,7 @@ export default function MielinaGuide() {
               Mielina, tu guía energética
             </h2>
             <p className="mt-5 max-w-xl text-lg text-sky-100/75 leading-relaxed">
-              Mielina es la abeja que le da cara a MIEL energy: mitad panel
+              Mielina es la abeja que le da cara a Miel energy: mitad panel
               solar, mitad colmena, siempre en movimiento. Nos acompaña en
               cada visita, cada diseño y cada instalación, recordándonos que
               la energía también puede transmitir calidez.

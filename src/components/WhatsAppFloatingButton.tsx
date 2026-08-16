@@ -18,7 +18,7 @@ export default function WhatsAppFloatingButton() {
 
   if (!visible) return null;
 
-  const text = encodeURIComponent("Hola MIEL energy, quiero más información sobre energía solar y baterías de respaldo.");
+  const text = encodeURIComponent("Hola Miel energy, quiero más información sobre energía solar y baterías de respaldo.");
 
   return (
     <motion.a

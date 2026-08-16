@@ -18,7 +18,7 @@ export default function CTA() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hola MIEL energy, soy ${form.nombre || "—"}.%0AInterés: ${form.interes}%0ATeléfono: ${form.telefono || "—"}%0AMensaje: ${form.mensaje || "—"}`;
+    const text = `Hola Miel energy, soy ${form.nombre || "—"}.%0AInterés: ${form.interes}%0ATeléfono: ${form.telefono || "—"}%0AMensaje: ${form.mensaje || "—"}`;
     window.open(`https://wa.me/${contact.whatsappNumber}?text=${text}`, "_blank");
   };
 
@@ -47,7 +47,7 @@ export default function CTA() {
             Cotiza tu energía solar o de respaldo
           </h2>
           <p className="mt-5 max-w-md text-lg text-sky-100/75 leading-relaxed">
-            Cuéntanos sobre tu consumo y tu ubicación. Un asesor de MIEL
+            Cuéntanos sobre tu consumo y tu ubicación. Un asesor de Miel
             energy te contacta con una propuesta a la medida.
           </p>
 

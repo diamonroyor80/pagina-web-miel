@@ -35,7 +35,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-sky-100/80 leading-relaxed">
-            En MIEL energy diseñamos, instalamos y monitoreamos sistemas
+            En Miel energy diseñamos, instalamos y monitoreamos sistemas
             solares y de baterías que reducen tu factura y te dan
             independencia energética, con la dulzura de un equipo que sí te
             acompaña.
@@ -81,7 +81,7 @@ export default function Hero() {
           <HexPortrait className="w-[280px] h-[360px] sm:w-[340px] sm:h-[440px] mx-auto">
             <Image
               src="/brand/mielina.webp"
-              alt="Mielina, la abeja guía energética de MIEL energy"
+              alt="Mielina, la abeja guía energética de Miel energy"
               width={866}
               height={807}
               priority
