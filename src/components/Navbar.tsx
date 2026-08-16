@@ -52,7 +52,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#contacto"
+          href="/#contacto"
           className="hidden lg:inline-flex items-center gap-2 rounded-full bg-gold-500 px-5 py-2.5 text-sm font-semibold text-navy-950 shadow-[0_0_0_0_rgba(252,207,7,0.6)] transition-all hover:shadow-[0_0_24px_2px_rgba(252,207,7,0.5)] hover:bg-gold-400"
         >
           Cotiza tu proyecto
@@ -86,7 +86,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="/#contacto"
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex items-center justify-center rounded-full bg-gold-500 px-5 py-3 text-sm font-semibold text-navy-950"
           >

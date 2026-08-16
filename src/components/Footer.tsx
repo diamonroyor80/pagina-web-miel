@@ -88,7 +88,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#contacto" className="text-gold-400 hover:text-gold-300">
+                <a href="/#contacto" className="text-gold-400 hover:text-gold-300">
                   Solicitar cotización →
                 </a>
               </li>
