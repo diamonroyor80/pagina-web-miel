@@ -36,11 +36,17 @@ export default function Footer() {
                 </HexBadge>
               </a>
               {[
-                { Icon: InstagramIcon, label: "Instagram de Miel energy" },
-                { Icon: FacebookIcon, label: "Facebook de Miel energy" },
-                { Icon: LinkedinIcon, label: "LinkedIn de Miel energy" },
-              ].map(({ Icon, label }, i) => (
-                <a key={i} href="#" aria-label={label}>
+                { Icon: InstagramIcon, label: "Instagram de Miel energy", href: contact.instagramUrl },
+                { Icon: FacebookIcon, label: "Facebook de Miel energy", href: "#" },
+                { Icon: LinkedinIcon, label: "LinkedIn de Miel energy", href: "#" },
+              ].map(({ Icon, label, href }, i) => (
+                <a
+                  key={i}
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
+                  aria-label={label}
+                >
                   <HexBadge size={44} strokeWidth={2.5} gap={8}>
                     <Icon className="h-4 w-4 text-cream-50/80" />
                   </HexBadge>

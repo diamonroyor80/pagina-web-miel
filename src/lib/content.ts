@@ -4,6 +4,7 @@ export const nav = [
   { label: "Por qué Miel", href: "/#por-que-miel" },
   { label: "Proceso", href: "/#proceso" },
   { label: "Equipo", href: "/equipo" },
+  { label: "Ubicación", href: "/ubicacion" },
   { label: "Mielina", href: "/#mielina" },
   { label: "Contacto", href: "/#contacto" },
 ];
@@ -17,6 +18,11 @@ export const contact = {
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=" +
     encodeURIComponent("Cra 33 #49 - 32, Caudal, Villavicencio, Meta, Colombia"),
+  mapsEmbedUrl:
+    "https://www.google.com/maps?q=" +
+    encodeURIComponent("Cra 33 #49 - 32, Caudal, Villavicencio, Meta, Colombia") +
+    "&output=embed",
+  instagramUrl: "https://www.instagram.com/mielenergiasolar/",
 };
 
 export const services = [
